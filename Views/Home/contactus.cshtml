@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <a href="/">Home</a>
+        <a href="/Home/aboutus"> __About Us</a>
+        <a href="/Home/teamandmembers">  __Team & Members</a>
+        <a href="/Home/contactus">  __Contact</a>
+
+    </div>
+    <h2>Contact Us</h2>
+    <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

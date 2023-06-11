@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <a href="/">Home</a>
+        <a href="/Home/aboutus"> __About Us</a>
+        <a href="/Home/teamandmembers">  __Team & Members</a>
+        <a href="/Home/contactus">  __Contact</a>
+
+    </div>
+    <h2>Our team and members</h2>
+    <ul>
+        @foreach (var item in Model)
+        {
+            
+                <h2> @item.Position </h2>
+                <ul>
+                    @item.Name 
+                    @item.Salary
+                </ul>
+        
+        }
+    </ul>
+</body>
+</html>
