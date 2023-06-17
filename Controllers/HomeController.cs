@@ -61,6 +61,35 @@ namespace labtask1.Controllers
 
             return View();
         }
+        [HttpGet]
+        public ActionResult login()
+        {
+            //ViewBag.Name = Request["Username"];
+            return View();
+        }
+        [HttpPost]
+        public ActionResult login(string Username, string Password)
+        {
+            //ViewBag.Name = form["Username"];
+            ViewBag.Name = Username;
+            return View();
+        }
+        [HttpGet]
+        public ActionResult signUp()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult signUp(User u)
+        {
+
+            var test = u.Dob.Date.ToString("yyyy-MM-dd");
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("login");
+            }
+            return View(u);
+        }
     }
 
     

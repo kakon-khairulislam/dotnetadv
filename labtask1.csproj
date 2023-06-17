@@ -134,6 +134,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\teamandmembers.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +177,8 @@
     <Content Include="Views\Home\aboutus.cshtml" />
     <Content Include="Views\Home\teamandmembers.cshtml" />
     <Content Include="Views\Home\contactus.cshtml" />
+    <Content Include="Views\Home\signup.cshtml" />
+    <Content Include="Views\Home\login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
